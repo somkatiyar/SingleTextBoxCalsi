@@ -1,0 +1,66 @@
+<html>
+    <head>
+          <title>calsi</title>
+          <link rel="stylesheet" href="calsicolor.css">
+
+          <script>
+                  var n=1;
+                  function fun1(str){
+                      document.getElementById("txt1").value+=document.getElementById("txt1").value=str;
+                      var num1=document.getElementById("txt1").value;
+                    }
+
+
+
+                function result(){
+
+                  var number=document.getElementById("txt1").value;
+                  var finalvalue=eval(number);
+                  document.getElementById("txt1").value=finalvalue;
+
+                }
+
+
+
+                function funclear(){
+                  document.getElementById("txt1").value="";
+                  document.getElementById("txt2").value="";
+                  document.getElementById("resultbox").value="";
+                  document.getElementById("signlogo").innerHTML="";
+
+                }
+
+                function cancil(){
+                  document.getElementById("txt1").value-=document.getElementById("txt1").value;
+                }
+
+          </script>
+
+    </head>
+<body>
+      <div id="calstyle">
+          <form id="formstyle">
+              <input type="text" onfocus="this.value=''" id="txt1"  value="">
+            <br/>
+              <button type="button" id="btncancil" value="C" class="a" onclick="cancil()"  >c</button><br>
+              <button type="button" id="btn7" value="7" class="a" onclick="fun1(this.value)">7</button>
+              <button type="button" id="btn8" value="8" class="a"  onclick="fun1(this.value)">8</button>
+              <button type="button" id="btn9" value="9" class="a"  onclick="fun1(this.value)">9</button>
+              <button type="button" id="btnequal" onclick="result()" class="a"  >=</button><br>
+              <button type="button" id="btn4" value="4" class="a"  onclick="fun1(this.value)">4</button>
+              <button type="button" id="btn5" value="5" class="a"  onclick="fun1(this.value)">5</button>
+              <button type="button" id="btn6" value="6" class="a"  onclick="fun1(this.value)">6</button>
+              <button type="button" id="btnminus " onclick="fun1(this.value)" class="a"  value="-">-</button><br>
+              <button type="button" id="btn1" value="1" class="a"  onclick="fun1(this.value)">1</button>
+              <button type="button" id="btn2" value="2" class="a"  onclick="fun1(this.value)">2</button>
+              <button type="button" id="btn3" value="3" class="a"  onclick="fun1(this.value)">3</button>
+              <button type="button" id="btnadd" onclick="fun1(this.value)"  class="a" value="+">+</button><br>
+              <button type="button" id="btn0" value="0" class="a"  onclick="fun1(this.value)">0</button>
+              <button type="button" id="btndecimal" value="." class="a"  onclick="fun1(this.value)">.</button>
+              <button type="button" id="btndivide" onclick="fun1(this.value)"  class="a" value="/">/</button>
+              <button type="button" id="btnmulti" onclick="fun1(this.value)" class="a"  value="*">*</button><br/>
+              <button type="button" id="btnclear" onclick="funclear()">CLEAR</button>
+          </form>
+          </div>
+    </body>
+</html>
